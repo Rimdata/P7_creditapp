@@ -13,7 +13,9 @@ import shap
 ## Page expands to full width
 st.set_page_config(layout="wide")
 st.balloons()
-
+#---------------------------------#
+def index():
+    return "Hello, world!"
 #---------------------------------#
 @st.cache_data  # 👈 Add the caching decorator
 def load_data(url):
@@ -53,7 +55,7 @@ Ce tableau de bord prédit la probabilité qu'un client rembourse son crédit et
 X = df.loc[df['SK_ID_CURR'] == selected_client, features]
 
 # Call API model for prediction
-api_url = 'http://localhost:5000/predict'
+api_url =  'https://predictapi.herokuapp.com/predict'     #'http://localhost:5000/predict'
 
 data = {'client_feat': X.to_json(orient="records")}
 
