@@ -28,7 +28,7 @@ features = list(df.iloc[:, 2:-2].columns)
 #---------------------------------#
 # Sidebar
 col1 = st.sidebar
-image = Image.open('pretadepenser.png')
+image = Image.open('images_app/pretadepenser.png')
 col1.image(image, width = 200, use_column_width=True)
 
 #col1.header('  Identifiant Client')
@@ -40,9 +40,9 @@ selected_features = col1.multiselect('Variables', features)
 col2, col3 = st.columns((2,1))
 
 col31, col32 = col3.columns((1,3))
-image = Image.open('OC.png')
+image = Image.open('images_app/OC.png')
 col31.image(image, width = 100, use_column_width=True)
-image = Image.open('credit.png')
+image = Image.open('images_app/credit.png')
 col32.image(image, width = 400, use_column_width=True)
 
 col2.write("<span style='font-size: 50px; text-align: center;'> <b>Gestionnaire de crédit </b></span>", unsafe_allow_html=True)
