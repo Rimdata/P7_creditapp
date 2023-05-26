@@ -13,7 +13,9 @@ import shap
 ## Page expands to full width
 st.set_page_config(layout="wide")
 st.balloons()
-
+#---------------------------------#
+def index():
+    return "Hello, world!"
 #---------------------------------#
 @st.cache_data  # 👈 Add the caching decorator
 def load_data(url):
