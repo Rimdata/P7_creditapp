@@ -140,7 +140,7 @@ col3.markdown(""" Les variables les plus importantes pour le modèle de prédict
 * **PREV_NAME_PRODUCT_TYPE_XNA_MEAN**: 
 """, unsafe_allow_html=True)
 
-image = Image.open('lgbm_importances.png')
+image = Image.open('images_app/lgbm_importances.png')
 col3.image(image, width = 200, use_column_width=True)
 st.write('---')
 
