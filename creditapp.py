@@ -137,7 +137,6 @@ col3.markdown(""" Les variables les plus importantes pour le modèle de prédict
 * **DAYS_BIRTH** : - l'âge du client calculé en jour 
 * **CLOSED_DAYS_CREDIT**: Combien de jours avant la demande actuelle le client a-t-il demandé un crédit au bureau de crédit
 * **PREV_DAYS_DECISION_MIN**: Combien de jours avant la décision concernant les demandes précédentes
-* **PREV_NAME_PRODUCT_TYPE_XNA_MEAN**: 
 """, unsafe_allow_html=True)
 
 image = Image.open('images_app/lgbm_importances.png')
